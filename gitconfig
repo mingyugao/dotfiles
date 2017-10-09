@@ -1,0 +1,21 @@
+[user]
+  name = Mingyu Gao
+  email = mingyu.gao96@gmail.com
+[github]
+  user = mingyugao
+  ; token =
+[alias]
+  st = status
+  cm = commit
+  df = diff
+  dt = difftool
+  br = branch --sort=committerdate
+  co = checkout
+  cp = cherry-pick
+  m = merge
+  p = pull
+  nb = checkout -b
+  db = br -d
+  pom = pull origin master
+  pos = pull origin stable
+  por = pull origin release

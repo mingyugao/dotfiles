@@ -8,5 +8,6 @@ export EDITOR=vim
 # Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ll='ls -l'
 alias vimrc='vim ~/.vimrc'
 alias gitconfig='vim ~/.gitconfig'

@@ -6,6 +6,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tomasiser/vim-code-dark'
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 " Preferences for NERDcommenter

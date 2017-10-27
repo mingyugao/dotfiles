@@ -1,13 +1,13 @@
 " vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree'
-Plug 'scrooloose/nerdcommenter'
-Plug 'tomasiser/vim-code-dark'
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'pangloss/vim-javascript'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree'
+Plug 'tomasiser/vim-code-dark'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Preferences for NERDcommenter

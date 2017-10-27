@@ -5,6 +5,10 @@ export LSCOLORS="gxfxcxdxbxegedabagacad"
 # Sets default editor to vim
 export EDITOR=vim
 
+# Enables git auto-complete and prompt
+source "/usr/local/etc/bash_completion.d/git-completion.bash"
+source "/usr/local/etc/bash_completion.d/git-prompt.sh"
+
 # Aliases
 alias ..='cd ..'
 alias ...='cd ../..'

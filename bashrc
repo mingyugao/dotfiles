@@ -2,6 +2,9 @@
 export CLICOLOR=1
 export LSCOLORS="gxfxcxdxbxegedabagacad"
 
+# Homebrew location
+export PATH="/usr/local/bin:$PATH"
+
 # Sets default editor to vim
 export EDITOR=vim
 

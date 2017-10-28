@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tomasiser/vim-code-dark'
@@ -25,12 +24,6 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-
-" Preferences for vim-javascript
-" Enable syntax highlighting for JSDocs
-let g:javascript_plugin_jsdoc = 1
-" Enable syntax highlighting for NGDocs. Requires JSDoc plugin to be enabled.
-let g:javascript_plugin_ngdoc = 1
 
 " General
 set number

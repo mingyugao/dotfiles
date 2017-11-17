@@ -26,12 +26,11 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " General
-set number
-set tabstop=2
-set shiftwidth=2
 set expandtab
+set number
+set shiftwidth=2
+set tabstop=2
 syntax enable
-colorscheme codedark
 
 " Remove all trailing whitespace by pressing F5
 nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>

@@ -15,6 +15,7 @@ source "/usr/local/etc/bash_completion.d/git-prompt.sh"
 # Aliases
 alias ..='cd ..'
 alias ...='cd ../..'
+alias ....='cd ../../..'
 alias ll='ls -l'
 alias vimrc='vim ~/.vimrc'
 alias gitconfig='vim ~/.gitconfig'

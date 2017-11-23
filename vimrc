@@ -2,10 +2,8 @@
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'kien/ctrlp.vim'
-Plug 'leafgarland/typescript-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'tomasiser/vim-code-dark'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 

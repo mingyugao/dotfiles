@@ -1,8 +1,10 @@
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
+Plug 'flazz/vim-colorschemes'
 Plug 'kien/ctrlp.vim'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -24,7 +26,12 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+" Preferences for vim-javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+
 " General
+colo spacegray
 set expandtab
 set number
 set shiftwidth=2

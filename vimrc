@@ -31,9 +31,10 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
 " General
-colo spacegray
 set expandtab
 set number
 set shiftwidth=2
 set tabstop=2
+set t_Co=256
 syntax enable
+colo spacegray

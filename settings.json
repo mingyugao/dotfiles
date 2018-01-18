@@ -1,0 +1,12 @@
+{
+  "editor.autoClosingBrackets": false,
+  "editor.formatOnSave": false,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "vim.cmdLineInitialColon": true,
+  "vim.cursorStylePerMode": {
+    "insert": "block"
+  }
+}

@@ -1,5 +1,5 @@
 # Sets custom prompt
-PS1="[\u@\h \W]\$ "
+export PS1='[\[\e[1;34m\]\W\[\e[m\]]\[\033[0;32m\]$( git branch 2> /dev/null | cut -f2 -d\* -s | sed "s/^ /[/" | sed "s/$/]/" )\[\033[0m\]\$ '
 
 # Enables color highlighting
 export CLICOLOR=1

@@ -1,5 +1,6 @@
 " vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'ajh17/VimCompletesMe'
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'kien/ctrlp.vim'

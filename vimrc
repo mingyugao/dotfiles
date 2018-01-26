@@ -11,6 +11,13 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 call plug#end()
 
+" Preferences for ctrlp.vim
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+" Preferences for vim-javascript
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+
 " Preferences for NERDcommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -26,10 +33,6 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-
-" Preferences for vim-javascript
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_ngdoc = 1
 
 " General
 set expandtab

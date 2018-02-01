@@ -4,6 +4,7 @@ Plug 'ajh17/VimCompletesMe'
 Plug 'bling/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'kien/ctrlp.vim'
+Plug 'leafgarland/typescript-vim'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'pangloss/vim-javascript'
 Plug 'scrooloose/nerdcommenter'
@@ -13,6 +14,9 @@ call plug#end()
 
 " Preferences for ctrlp.vim
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+
+" Preferences for typescript-vim
+let g:typescript_indent_disable = 1
 
 " Preferences for vim-javascript
 let g:javascript_plugin_jsdoc = 1

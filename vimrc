@@ -35,6 +35,9 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+" Preferences for NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
 " General
 set expandtab
 set number

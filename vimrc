@@ -20,28 +20,33 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
 " Preferences for NERDcommenter
-" Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
-" Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
-" Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDDefaultAlign = 'left'
-" Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_java = 1
-" Add your own custom formats or override the defaults
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-" Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
-" Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
 " Preferences for NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
 " General
-set expandtab
-set number
-set shiftwidth=2
-set tabstop=2
-set t_Co=256
-syntax enable
+set autoindent          " Automatically indent
+set expandtab           " Spaces, not tabs
+set hls                 " Search highlighting
+set ignorecase          " Case insensitive search
+set laststatus=2        " Always show status line
+set linebreak           " Break lines
+set nobackup            " No backup files
+set noshowmode          " Hide status bar
+set noswapfile          " No swap files
+set nowritebackup       " Only in case you don't want a backup file while editing
+set number              " Enable line numbers by default
+set shiftwidth=2        " Indent 2 spaces
+set smartcase           " Allow sensitive search when at least one capital
+set tabstop=2           " Tab spacing
+set t_Co=256            " Enable 256-colors
+set encoding=utf-8
+set fileencoding=utf-8
+syntax on

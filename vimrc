@@ -15,9 +15,6 @@ call plug#end()
 " Preferences for ctrlp.vim
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
 
-" Preferences for typescript-vim
-let g:typescript_indent_disable = 1
-
 " Preferences for vim-javascript
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1

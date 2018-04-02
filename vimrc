@@ -1,7 +1,7 @@
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'ajh17/VimCompletesMe'
-Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'kien/ctrlp.vim'
 Plug 'leafgarland/typescript-vim'

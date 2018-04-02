@@ -13,7 +13,7 @@ Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Preferences for ctrlp.vim
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
 
 " Preferences for vim-javascript
 let g:javascript_plugin_jsdoc = 1

@@ -16,8 +16,5 @@
   p = pull
   nb = checkout -b
   db = br -d
-  pom = pull origin master
-  pos = pull origin stable
-  por = pull origin release
   unstage = reset HEAD --
   last = log -1 HEAD

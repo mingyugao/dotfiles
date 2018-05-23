@@ -13,6 +13,8 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'whatyouhide/vim-lengthmatters'
 call plug#end()
 
 " Preferences for ctrlp.vim
@@ -27,7 +29,7 @@ ca bd BD
 ca bun BUN
 ca bw BW
 
-" Preferences for NERDcommenter
+" Preferences for nerdcommenter
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
@@ -36,11 +38,15 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
-" Preferences for NERDTree
+" Preferences for nerdtree
 let NERDTreeShowHidden = 1
 map <C-n> :NERDTreeToggle<CR>
 
+" Preferences for vim-airline
+let g:airline_theme='onedark'
+
 " General
+colo onedark
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 set autoindent          " Automatically indent
@@ -60,4 +66,3 @@ set t_Co=256            " Enable 256-colors
 set encoding=utf-8
 set fileencoding=utf-8
 syntax on
-colo grb256

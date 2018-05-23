@@ -61,8 +61,9 @@ set nowritebackup       " Only in case you don't want a backup file while editin
 set number              " Enable line numbers by default
 set shiftwidth=2        " Indent 2 spaces
 set smartcase           " Allow sensitive search when at least one capital
-set tabstop=2           " Tab spacing
 set t_Co=256            " Enable 256-colors
+set tabstop=2           " Tab spacing
+set ttimeoutlen=0       " No delay when pressing ESC
 set encoding=utf-8
 set fileencoding=utf-8
 syntax on

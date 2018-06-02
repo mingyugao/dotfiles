@@ -45,6 +45,9 @@ map <C-n> :NERDTreeToggle<CR>
 " Preferences for vim-airline
 let g:airline_theme='onedark'
 
+" Preferences for vim-lengthmatters
+let g:lengthmatters_use_textwidth = 0
+
 " General
 colo onedark
 nnoremap <C-e> 3<C-e>

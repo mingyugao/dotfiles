@@ -14,10 +14,6 @@ export PATH="/usr/local/bin:$PATH"
 # Z location
 . /usr/local/etc/profile.d/z.sh
 
-# Enables git auto-complete and prompt
-source "/usr/local/etc/bash_completion.d/git-completion.bash"
-source "/usr/local/etc/bash_completion.d/git-prompt.sh"
-
 # Aliases
 alias ..="cd .."
 alias ...="cd ../.."

@@ -6,9 +6,9 @@ xcode-select --install
 
 # Install dev tools
 brew install git
+brew install the_silver_searcher
 brew install tmux
 brew install z
-brew install the_silver_searcher
 
 # Create symlinks for dotfiles
 ln -s ~/.dotfiles/bash_profile ~/.bash_profile

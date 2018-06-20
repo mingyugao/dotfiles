@@ -13,21 +13,15 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'whatyouhide/vim-lengthmatters'
 call plug#end()
 
 " Preferences for ctrlp.vim
-let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|build)|(\.(swp|ico|git|svn))$'
+let g:ctrlp_custom_ignore = '\v[\/](build|coverage|dist|node_modules|target)|(\.(git|ico|svn|swp))$'
 
 " Preferences for vim-javascript
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
-
-" Preferences for vim-bufkill
-ca bd BD
-ca bun BUN
-ca bw BW
 
 " Preferences for nerdcommenter
 let g:NERDSpaceDelims = 1
@@ -42,14 +36,10 @@ let g:NERDTrimTrailingWhitespace = 1
 let NERDTreeShowHidden = 1
 map <C-n> :NERDTreeToggle<CR>
 
-" Preferences for vim-airline
-let g:airline_theme='onedark'
-
 " Preferences for vim-lengthmatters
 let g:lengthmatters_use_textwidth = 0
 
 " General
-colo onedark
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 set autoindent          " Automatically indent
@@ -60,6 +50,7 @@ set linebreak           " Break lines
 set nobackup            " No backup files
 set noshowmode          " Hide status bar
 set noswapfile          " No swap files
+set nowrap              " Text will not wrap to fit
 set nowritebackup       " Only in case you don't want a backup file while editing
 set number              " Enable line numbers by default
 set shiftwidth=2        " Indent 2 spaces

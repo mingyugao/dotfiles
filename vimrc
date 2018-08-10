@@ -27,13 +27,12 @@ let g:javascript_plugin_ngdoc = 1
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 let g:NERDDefaultAlign = 'left'
-let g:NERDAltDelims_java = 1
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " Preferences for nerdtree
 let NERDTreeShowHidden = 1
+map <C-m> :NERDTreeFind<CR>
 map <C-n> :NERDTreeToggle<CR>
 
 " Preferences for vim-lengthmatters

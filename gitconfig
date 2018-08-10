@@ -1,3 +1,5 @@
+[core]
+  pager = less -FRX
 [user]
   name = Mingyu Gao
   email = mingyu.gao96@gmail.com

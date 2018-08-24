@@ -9,6 +9,11 @@ brew install git
 brew install the_silver_searcher
 brew install tmux
 brew install z
+brew install zsh
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins
 
 # Create symlinks for dotfiles
 ln -s ~/.dotfiles/bash_profile ~/.bash_profile
@@ -17,3 +22,4 @@ ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/zshrc ~/.zshrc

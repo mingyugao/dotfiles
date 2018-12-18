@@ -13,7 +13,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
-Plug 'whatyouhide/vim-lengthmatters'
 call plug#end()
 
 " Preferences for ctrlp.vim
@@ -34,9 +33,6 @@ let g:NERDTrimTrailingWhitespace = 1
 let NERDTreeShowHidden = 1
 map <C-m> :NERDTreeFind<CR>
 map <C-n> :NERDTreeToggle<CR>
-
-" Preferences for vim-lengthmatters
-let g:lengthmatters_use_textwidth = 0
 
 " General
 nnoremap <C-e> 3<C-e>

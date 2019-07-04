@@ -30,7 +30,8 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 " Preferences for nerdtree
-let NERDTreeShowHidden = 1
+let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:NERDTreeShowHidden = 1
 map <C-m> :NERDTreeFind<CR>
 map <C-n> :NERDTreeToggle<CR>
 

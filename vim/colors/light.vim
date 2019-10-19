@@ -1,22 +1,22 @@
-" dark.vim
+" light.vim
 highlight clear
 set t_Co=256
 
-let g:colors_name="dark"
+let g:colors_name="light"
 
-let s:red = 168
-let s:dark_red = 196
-let s:green = 114
-let s:yellow = 180
-let s:dark_yellow = 173
-let s:blue = 75
-let s:purple = 176
-let s:cyan = 73
-let s:white = 188
+let s:red = 196
+let s:dark_red = 160
+let s:green = 28
+let s:yellow = 136
+let s:dark_yellow = 136
+let s:blue = 33
+let s:purple = 127
+let s:cyan = 31
+let s:white = 231
 let s:black = 16
-let s:grey = 237
-let s:comment = 242
-let s:gutter = 247
+let s:grey = 254
+let s:comment = 244
+let s:gutter = 31
 let s:vertsplit = 59
 
 function! s:h(group, style)
@@ -91,7 +91,7 @@ call s:h("MatchParen",   { "fg": s:red,         "bg": s:grey        })
 call s:h("ModeMsg",      { "fg": "NONE",        "bg": "NONE"        })
 call s:h("MoreMsg",      { "fg": "NONE",        "bg": "NONE"        })
 call s:h("NonText",      { "fg": s:grey,        "bg": "NONE"        })
-call s:h("Normal",       { "fg": s:white,       "bg": s:black       })
+call s:h("Normal",       { "fg": s:black,       "bg": s:white       })
 call s:h("Pmenu",        { "fg": "NONE",        "bg": s:grey        })
 call s:h("PmenuSel",     { "fg": "NONE",        "bg": s:black       })
 call s:h("PmenuSbar",    { "fg": "NONE",        "bg": s:grey        })
@@ -313,4 +313,4 @@ hi link gitcommitDiscardedArrow gitcommitDiscardedFile
 hi link gitcommitSelectedArrow gitcommitSelectedFile
 hi link gitcommitUnmergedArrow gitcommitUnmergedFile
 
-set background=dark
+set background=light

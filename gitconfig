@@ -19,4 +19,5 @@
   nb = checkout -b
   db = br -d
   unstage = reset HEAD --
+  uncm = reset HEAD~
   last = log -1 HEAD

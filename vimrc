@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ajh17/VimCompletesMe'
 Plug 'qpkorr/vim-bufkill'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -10,14 +11,13 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ntpeters/vim-better-whitespace'
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
-Plug 'ianks/vim-tsx'
-Plug 'wlangstroth/vim-racket'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 " Preferences for ctrlp.vim
 let g:ctrlp_custom_ignore = '\v[\/](build|coverage|node_modules)|(\.(ico|swp))$'
+let g:ctrlp_working_path_mode = 0
 
 " Preferences for nerdtree
 let g:NERDTreeNodeDelimiter = "\u00a0"
@@ -37,6 +37,8 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
 " General
+autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 set autoindent
@@ -46,6 +48,7 @@ set fileencoding=utf-8
 set ignorecase
 set laststatus=2
 set nobackup
+set noshowmode
 set noswapfile
 set nowrap
 set nowritebackup

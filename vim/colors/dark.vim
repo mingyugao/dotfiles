@@ -5,15 +5,15 @@ set t_Co=256
 let g:colors_name="dark"
 
 let s:red = 168
-let s:dark_red = 196
+let s:dark_red = 203
 let s:green = 114
-let s:yellow = 180
+let s:yellow = 179
 let s:dark_yellow = 173
 let s:blue = 75
 let s:purple = 176
 let s:cyan = 73
 let s:white = 188
-let s:black = 16
+let s:black = 235
 let s:grey = 237
 let s:comment = 242
 let s:gutter = 247
@@ -103,13 +103,13 @@ call s:h("SpellBad",     { "fg": s:red,         "bg": "NONE"        })
 call s:h("SpellCap",     { "fg": s:dark_yellow, "bg": "NONE"        })
 call s:h("SpellLocal",   { "fg": s:dark_yellow, "bg": "NONE"        })
 call s:h("SpellRare",    { "fg": s:dark_yellow, "bg": "NONE"        })
-call s:h("StatusLine",   { "fg": s:white,       "bg": s:grey        })
+call s:h("StatusLine",   { "fg": s:white,       "bg": s:black       })
 call s:h("StatusLineNC", { "fg": s:comment,     "bg": "NONE"        })
 call s:h("TabLine",      { "fg": s:comment,     "bg": "NONE"        })
 call s:h("TabLineFill",  { "fg": "NONE",        "bg": "NONE"        })
 call s:h("TabLineSel",   { "fg": s:white,       "bg": "NONE"        })
 call s:h("Title",        { "fg": s:green,       "bg": "NONE"        })
-call s:h("Visual",       { "fg": s:black,       "bg": s:grey        })
+call s:h("Visual",       { "fg": "NONE",        "bg": s:grey        })
 call s:h("VisualNOS",    { "fg": "NONE",        "bg": s:grey        })
 call s:h("WarningMsg",   { "fg": s:red,         "bg": "NONE"        })
 call s:h("WildMenu",     { "fg": "NONE",        "bg": "NONE"        })
@@ -190,6 +190,19 @@ call s:h("javascriptOpSymbols",    { "fg": s:cyan,        "bg": "NONE"        })
 call s:h("javascriptPropertyName", { "fg": s:green,       "bg": "NONE"        })
 call s:h("javascriptTemplateSB",   { "fg": s:dark_red,    "bg": "NONE"        })
 call s:h("javascriptVariable",     { "fg": s:purple,      "bg": "NONE"        })
+" https://github.com/MaxMEllon/vim-jsx-pretty
+call s:h("jsxTagName",       { "fg": s:yellow,      "bg": "NONE"        })
+call s:h("jsxComponentName", { "fg": s:yellow,      "bg": "NONE"        })
+call s:h("jsxAttrib",        { "fg": s:dark_yellow, "bg": "NONE"        })
+call s:h("jsxEqual",         { "fg": s:cyan,        "bg": "NONE"        })
+" https://github.com/peitalin/vim-jsx-typescript
+call s:h("tsxTag",                { "fg": s:comment,     "bg": "NONE"        })
+call s:h("tsxCloseTag",           { "fg": s:comment,     "bg": "NONE"        })
+call s:h("tsxTagName",            { "fg": s:yellow,      "bg": "NONE"        })
+call s:h("tsxCloseTagName",       { "fg": s:yellow,      "bg": "NONE"        })
+call s:h("tsxEqual",              { "fg": s:cyan,        "bg": "NONE"        })
+call s:h("tsxAttributeBraces",    { "fg": s:blue,        "bg": "NONE"        })
+call s:h("ReactLifeCycleMethods", { "fg": s:blue,        "bg": "NONE"        })
 
 " JSON
 call s:h("jsonCommentError",      { "fg": s:white,       "bg": "NONE"        })
@@ -265,7 +278,7 @@ call s:h("sassMixinName",      { "fg": s:blue,        "bg": "NONE"        })
 call s:h("sassMixing",         { "fg": s:purple,      "bg": "NONE"        })
 
 " TypeScript
-call s:h("typescriptReserved",  { "fg": s:purple,      "bg": "NONE"        })
+" call s:h("typescriptReserved",  { "fg": s:purple,      "bg": "NONE"        })
 call s:h("typescriptEndColons", { "fg": s:white,       "bg": "NONE"        })
 call s:h("typescriptBraces",    { "fg": s:white,       "bg": "NONE"        })
 

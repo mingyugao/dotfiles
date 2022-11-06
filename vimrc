@@ -16,7 +16,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 " Preferences for ctrlp.vim
-let g:ctrlp_custom_ignore = '\v[\/](build|coverage|node_modules)|(\.(ico|swp))$'
+let g:ctrlp_custom_ignore = '\v[\/](build|coverage|cypress|dist|node_modules)|(\.(ico|swp))$'
 let g:ctrlp_working_path_mode = 0
 
 " Preferences for nerdtree
@@ -39,8 +39,11 @@ let g:javascript_plugin_ngdoc = 1
 " General
 autocmd BufNewFile,BufRead *.jsx set filetype=javascript.jsx
 autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+nmap <CR> <Nop>
 nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 set autoindent
 set encoding=utf-8
 set expandtab
@@ -53,8 +56,8 @@ set noswapfile
 set nowrap
 set nowritebackup
 set number
-set shiftwidth=2
+set shiftwidth=4
 set smartcase
-set tabstop=2
+set tabstop=4
 set ttimeoutlen=0
 colo dark

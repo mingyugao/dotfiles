@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/Cellar/node@12/12.16.3/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -113,8 +114,16 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias ls="ls -GFh"
 alias ll="ls -l"
+alias c="clear"
 alias vimrc="vim ~/.vimrc"
 alias gitconfig="vim ~/.gitconfig"
 alias ta="tmux attach"
 alias tls="tmux ls"
 alias tkill="tmux kill-session -t"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"

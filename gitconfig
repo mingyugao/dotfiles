@@ -10,6 +10,7 @@
   st = status
   cm = commit
   df = diff
+  df-last = diff HEAD^ HEAD
   dt = difftool
   br = branch --sort=committerdate
   co = checkout
